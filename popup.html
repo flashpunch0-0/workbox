@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stash Tasks</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        width: 400px;
+        padding: 15px;
+        background-color: #f0f4f8;
+      }
+      h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        color: #2c3e50;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(90deg, #3498db, #919ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h3 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: #34495e;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+      .form-group label {
+        color: #34495e;
+      }
+      .form-control,
+      .form-control-select {
+        margin-bottom: 12px;
+      }
+      .btn-primary {
+        background-color: #3498db;
+        border: none;
+        border-radius: 4px;
+      }
+      .btn-primary:hover {
+        background-color: #2980b9;
+      }
+      #job-list {
+        padding-left: 0;
+        list-style-type: none;
+      }
+      .job-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column; /* Changed from row to column */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .job-info {
+        flex: 1;
+      }
+      .actions {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px; /* Added margin to separate from job info */
+      }
+      .btn-sm {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2><i class="fas fa-briefcase"></i>Workbox</h2>
+    </header>
+    <main>
+      <form id="job-form" class="bg-white p-3 rounded shadow-sm">
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="role">Role</label>
+          <input type="text" id="role" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" class="form-control-select" required>
+            <option value="applied">Applied</option>
+            <option value="interviewing">Interviewing</option>
+            <option value="offer">Offer</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </div>
+        <!-- New Input for Job URL -->
+        <div class="form-group">
+          <label for="job-url">Job URL</label>
+          <input
+            type="url"
+            id="job-url"
+            class="form-control"
+            placeholder="https://example.com/job-posting"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Save Job</button>
+      </form>
+      <section id="job-list-container">
+        <h3>Applied Jobs</h3>
+        <ul id="job-list"></ul>
+      </section>
+      <div
+        id="error-message"
+        class="text-danger mt-2"
+        style="display: none"
+      ></div>
+    </main>
+    <script src="popup.js"></script>
+    <div id="userInfo"></div>
+    <button id="signInButton">Sign In</button>
+    <button id="signOutButton">Sign Out</button>
+  </body>
+</html>

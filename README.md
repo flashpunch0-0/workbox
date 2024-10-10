@@ -14,7 +14,7 @@
 7. [Firebase Firestore Integration](#firebase-firestore-integration)
 8. [Firebase Security Rules](#firebase-security-rules)
 9. [Contributing](#contributing)
-10. [License](#license)
+
 
 ---
 
@@ -132,9 +132,6 @@ If you would like to contribute to the project, please follow these steps:
 4. Push to the branch: `git push origin feature/YourFeature`.
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 

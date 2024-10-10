@@ -2,7 +2,7 @@
 # WORKBOX
 ![Screenshot 2024-10-06 041401](https://github.com/user-attachments/assets/101eb439-1c3a-4ad8-a8e3-8bc7c13ce389)
 
-
+# Upcoming Updates - dynamic collection creation, instant updates, reminder, ui enhancements
 ## Table of Contents
 
 1. [Overview](#overview)

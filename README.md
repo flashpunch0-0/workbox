@@ -13,7 +13,7 @@
 8. [Firebase Security Rules](#firebase-security-rules)
 9. [Contributing](#contributing)
 10. [License](#license)
-11. extra
+
 ---
 
 ## Overview
@@ -65,13 +65,12 @@ job-tracker-extension/
 │   └── popup.js
 ├── popup.html
 ├── manifest.json
-└── styles.css
+
 ```
 
 - **`popup.html`**: The main UI for the extension.
 - **`popup.js`**: Handles the logic for adding, viewing, and updating jobs.
 - **`manifest.json`**: Metadata about the extension, including permissions and background scripts.
-- **`styles.css`**: Custom styles for the extension.
 
 ## Firebase Firestore Integration
 
@@ -137,4 +136,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to modify any section to better match your project’s specifics or preferences. If you have any additional features or modifications in mind, you can include those as well!

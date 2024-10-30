@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "WORKBOX",
+  "version": "1.0",
+  "description": "Track Back",
+  "permissions": ["storage", "offscreen"],
+
+  "background": {
+    "service_worker": "dist/backgroundbundled.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["offscreen.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "oauth2": {
+    "client_id": "Your clientid",
+    "scopes": ["openid", "email", "profile"]
+  }
+}

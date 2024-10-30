@@ -1,0 +1,5 @@
+Webpack is a popular module bundler primarily for JavaScript applications. It takes your project's various assets (JavaScript files, CSS, images, etc.) and bundles them into a few or even a single file that is optimized for production. This process helps improve performance and maintainability. Here's a detailed look at what Webpack does:
+"key": "-----BEGIN PUBLIC KEY-----\nYOURPUBLICKEY\n-----END PUBLIC KEY-----",
+
+npx webpack --mode production
+

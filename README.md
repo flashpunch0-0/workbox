@@ -1,6 +1,8 @@
 ---
 # WORKBOX
+![Screenshot 2024-10-06 041401](https://github.com/user-attachments/assets/101eb439-1c3a-4ad8-a8e3-8bc7c13ce389)
 
+# Upcoming Updates - dynamic collection creation,  reminder, ui enhancements
 ## Table of Contents
 
 1. [Overview](#overview)
@@ -12,8 +14,8 @@
 7. [Firebase Firestore Integration](#firebase-firestore-integration)
 8. [Firebase Security Rules](#firebase-security-rules)
 9. [Contributing](#contributing)
-10. [License](#license)
-11. extra
+
+
 ---
 
 ## Overview
@@ -71,7 +73,9 @@ job-tracker-extension/
 - **`popup.html`**: The main UI for the extension.
 - **`popup.js`**: Handles the logic for adding, viewing, and updating jobs.
 - **`manifest.json`**: Metadata about the extension, including permissions and background scripts.
-- **`styles.css`**: Custom styles for the extension.
+  <<<<<<< HEAD
+- # **`styles.css`**: Custom styles for the extension.
+  > > > > > > > 9d500066dcc266287a2ef065982b9c897a4059a1
 
 ## Firebase Firestore Integration
 
@@ -131,10 +135,16 @@ If you would like to contribute to the project, please follow these steps:
 4. Push to the branch: `git push origin feature/YourFeature`.
 5. Open a pull request.
 
+<<<<<<< HEAD
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feel free to modify any section to better match your project’s specifics or preferences. If you have any additional features or modifications in mind, you can include those as well!
+# Feel free to modify any section to better match your project’s specifics or preferences. If you have any additional features or modifications in mind, you can include those as well!
+
+---
+
+> > > > > > > 9d500066dcc266287a2ef065982b9c897a4059a1

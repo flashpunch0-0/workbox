@@ -1,4 +1,4 @@
-const FIREBASE_HOSTING_URL = "https://jtstash-8806b.web.app"; // Replace with your Firebase hosting URL
+const FIREBASE_HOSTING_URL = "your-firebase-hosting-url"; // Replace with your Firebase hosting URL
 
 // Create an iframe and append it to the body to host the Firebase auth page
 const iframe = document.createElement("iframe");
@@ -19,9 +19,7 @@ function isValidJSON(str) {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "getAuth" && message.target === "offscreen") {
     function handleIframeMessage({ data }) {
-      // Log the raw data to inspect what is being received
       console.log("Raw iframe message received:", data);
-
       if (typeof data === "string" && isValidJSON(data)) {
         const parsedData = JSON.parse(data);
         console.log(parsedData);
@@ -34,7 +32,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           });
         }
       } else {
-        // Check if the message is an empty string or has other issues
         if (data === "") {
           console.warn("Received an empty message from iframe");
         } else {

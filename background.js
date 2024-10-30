@@ -5,7 +5,6 @@ import {
   collection,
   addDoc,
   getDocs,
-  QuerySnapshot,
   updateDoc,
 } from "firebase/firestore";
 
@@ -178,6 +177,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         sendResponse({ status: "error", error: error.message });
       });
 
-    return true;
+    return true; // Indicates that the response will be sent asynchronously
   }
 });

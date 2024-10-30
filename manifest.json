@@ -18,8 +18,14 @@
       "matches": ["<all_urls>"]
     }
   ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "oauth2": {
-    "client_id": "Your clientid",
+    "client_id": "your-client_id",
     "scopes": ["openid", "email", "profile"]
   }
 }

@@ -135,7 +135,6 @@ If you would like to contribute to the project, please follow these steps:
 4. Push to the branch: `git push origin feature/YourFeature`.
 5. Open a pull request.
 
-<<<<<<< HEAD
 
 ## License
 
@@ -145,6 +144,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 # Feel free to modify any section to better match your project’s specifics or preferences. If you have any additional features or modifications in mind, you can include those as well!
 
----
-
-> > > > > > > 9d500066dcc266287a2ef065982b9c897a4059a1

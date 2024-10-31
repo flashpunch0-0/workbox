@@ -1,6 +1,4 @@
-node_modules
-jtstashauthentication
-dist
+node_modules/
+dist/
 background.js
-dist
 .env

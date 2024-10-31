@@ -25,7 +25,7 @@
     }
   ],
   "oauth2": {
-    "client_id": "your-client_id",
+    "client_id": "your-client-id",
     "scopes": ["openid", "email", "profile"]
   }
 }
